@@ -14,9 +14,9 @@ jobs:
         uses: machine-learning-apps/gpr-docker-publish@master
         id: docker
         with:
-          IMAGE_NAME: 'docker-java14'
+          IMAGE_NAME: 'docker-java16'
           TAG: 'latest'
           DOCKERFILE_PATH: 'Dockerfile'
           BUILD_CONTEXT: './'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
